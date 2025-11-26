@@ -93,6 +93,23 @@
                         android:text="Rich, creamy curry made with paneer cubes in buttery tomato gravy."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -131,6 +148,23 @@
                         android:text="Yellow lentils tempered with ghee, garlic, and aromatic spices."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -169,6 +203,23 @@
                         android:text="Fragrant basmati rice cooked with vegetables and Indian spices."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -207,6 +258,24 @@
                         android:text="Tender chicken cooked in creamy tomato sauce with butter and spices."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+
+                    <Button
+                        android:id="@+id/fav4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -245,6 +314,24 @@
                         android:text="Fluffy basmati rice flavored with roasted cumin seeds."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+
+                    <Button
+                        android:id="@+id/fav5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -283,6 +370,23 @@
                         android:text="Assorted vegetables cooked in rich onion-tomato gravy."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -321,6 +425,23 @@
                         android:text="Red kidney beans curry served with steamed rice."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -359,6 +480,23 @@
                         android:text="Paneer cubes cooked in creamy spinach gravy with spices."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -397,6 +535,23 @@
                         android:text="Fragrant rice cooked with vegetables and light spices."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -435,6 +590,23 @@
                         android:text="Classic Indian chicken curry cooked with onions, tomatoes, and spices."
                         android:textSize="14sp"
                         android:textColor="#666666" />
+
+                    <Button
+                        android:id="@+id/fav10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Add to Favorite"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="@android:color/holo_red_dark"
+                        android:textColor="@android:color/white" />
+                    <Button
+                        android:id="@+id/details10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👀 View Details"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#FFA726"
+                        android:textColor="@android:color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
