@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -205,6 +206,79 @@ public class recipe extends AppCompatActivity {
                 steps.setText("1. Boil dal.\n2. Prepare tadka.\n3. Mix and serve hot.");
                 makingSteps.setText("1️⃣ Pressure cook dal with turmeric and salt.\n2️⃣ In ghee, add cumin, mustard seeds, and garlic.\n3️⃣ Pour this tadka over the cooked dal.\n4️⃣ Mix well and simmer for a few minutes.\n5️⃣ Garnish with coriander and serve with rice or roti.");
                 break;
+
+            case "Chicken Curry":
+                title.setText("Chicken Curry");
+                recipeImage.setImageResource(R.drawable.cc);
+                ingredients.setText("• Chicken (500g)\n• Onions (2, finely chopped)\n• Tomatoes (2, pureed)\n• Ginger-garlic paste (2 tbsp)\n• Curd/Yogurt (½ cup)\n• Turmeric powder (½ tsp)\n• Red chili powder (1 tsp)\n• Coriander powder (1 tbsp)\n• Garam masala (1 tsp)\n• Oil (3 tbsp)\n• Fresh coriander (for garnish)");
+                steps.setText("1. Marinate chicken.\n2. Fry onions and spices.\n3. Add chicken and cook.\n4. Add tomatoes and curd.\n5. Simmer until chicken is tender.");
+                makingSteps.setText(
+                        "1️⃣ Marinate chicken with curd, turmeric, chili powder, and salt; keep for 20 minutes.\n" +
+                                "2️⃣ Heat oil and sauté chopped onions until golden brown.\n" +
+                                "3️⃣ Add ginger-garlic paste and cook until raw smell goes.\n" +
+                                "4️⃣ Mix coriander powder and cook for 1–2 minutes.\n" +
+                                "5️⃣ Add chicken pieces and fry until they change color.\n" +
+                                "6️⃣ Add tomato puree and cook until oil separates.\n" +
+                                "7️⃣ Pour 1 cup water, cover, and cook for 20–25 minutes.\n" +
+                                "8️⃣ Sprinkle garam masala and garnish with fresh coriander before serving."
+                );
+                break;
+            case "Jeera Rice":
+                title.setText("Jeera Rice");
+                recipeImage.setImageResource(R.drawable.jeera);
+                ingredients.setText("• Basmati rice (1 cup)\n• Cumin seeds / Jeera (1 tbsp)\n• Ghee (1–2 tbsp)\n• Bay leaf (1)\n• Cloves (2)\n• Cinnamon (1 small piece)\n• Water (2 cups)\n• Salt to taste\n• Fresh coriander (optional)");
+                steps.setText("1. Wash rice.\n2. Sauté jeera.\n3. Add rice & spices.\n4. Add water.\n5. Cook until fluffy.");
+                makingSteps.setText(
+                        "1️⃣ Wash basmati rice 2–3 times and soak for 15–20 minutes.\n" +
+                                "2️⃣ Heat ghee in a pan and add cumin seeds; let them crackle.\n" +
+                                "3️⃣ Add bay leaf, cloves, and cinnamon; sauté for a few seconds.\n" +
+                                "4️⃣ Add soaked rice and gently fry for 1–2 minutes.\n" +
+                                "5️⃣ Add 2 cups water and salt; mix lightly.\n" +
+                                "6️⃣ Cover and cook on low flame until rice becomes soft and fluffy.\n" +
+                                "7️⃣ Garnish with fresh coriander and serve hot."
+                );
+                break;
+
+            case "Mix Veg Curry":
+                title.setText("Mix Veg Curry");
+                recipeImage.setImageResource(R.drawable.curry);
+                ingredients.setText(
+                        "• Carrot (½ cup, chopped)\n" +
+                                "• Green peas (½ cup)\n" +
+                                "• Beans (½ cup, chopped)\n" +
+                                "• Cauliflower (½ cup, florets)\n" +
+                                "• Potato (1, diced)\n" +
+                                "• Onion (1, finely chopped)\n" +
+                                "• Tomato puree (1 cup)\n" +
+                                "• Ginger-garlic paste (1 tbsp)\n" +
+                                "• Turmeric powder (½ tsp)\n" +
+                                "• Red chili powder (1 tsp)\n" +
+                                "• Coriander powder (1 tbsp)\n" +
+                                "• Garam masala (½ tsp)\n" +
+                                "• Cream or milk (2 tbsp)\n" +
+                                "• Oil (2 tbsp)\n" +
+                                "• Salt to taste"
+                );
+
+                steps.setText("1. Chop vegetables.\n2. Sauté onions & spices.\n3. Add veggies.\n4. Add tomato gravy.\n5. Cook until vegetables soften.");
+
+                makingSteps.setText(
+                        "1️⃣ Chop all vegetables (carrot, beans, peas, cauliflower, potato).\n" +
+                                "2️⃣ Heat oil in a pan and sauté chopped onions until golden brown.\n" +
+                                "3️⃣ Add ginger-garlic paste and cook for a minute.\n" +
+                                "4️⃣ Add turmeric, chili powder, and coriander powder; mix well.\n" +
+                                "5️⃣ Pour in tomato puree and cook until oil separates.\n" +
+                                "6️⃣ Add all vegetables and mix with the masala.\n" +
+                                "7️⃣ Add 1 cup water and salt; cover and cook for 12–15 minutes.\n" +
+                                "8️⃣ When vegetables turn soft, add cream or milk for richness.\n" +
+                                "9️⃣ Sprinkle garam masala and cook for 2 more minutes.\n" +
+                                "🔟 Serve hot with roti, naan, or rice."
+                );
+                break;
+
+
+
+
 
         }
 

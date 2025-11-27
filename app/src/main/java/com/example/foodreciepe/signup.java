@@ -1,5 +1,6 @@
 package com.example.foodreciepe;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -51,21 +52,63 @@ public class signup extends AppCompatActivity {
         });
 
         // 🔹 Verify OTP
+//        btnVerifyOtp.setOnClickListener(v -> {
+//            String enteredOtp = etOtp.getText().toString().trim();
+//
+//            if (enteredOtp.isEmpty()) {
+//                Toast.makeText(this, "Please enter OTP", Toast.LENGTH_SHORT).show();
+//                return;
+//            }
+//
+//            if (String.valueOf(generatedOtp).equals(enteredOtp)) {
+//                isOtpVerified = true;
+//                Toast.makeText(this, "OTP Verified ✅", Toast.LENGTH_SHORT).show();
+//            } else {
+//                Toast.makeText(this, "Incorrect OTP ❌", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+
+//        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+// Generate OTP button - only generates and shows the OTP
+        btnGenerateOtp.setOnClickListener(v -> {
+            String mobile = etMobile.getText().toString().trim();
+
+            if (mobile.length() != 10) {
+                showAlert("Invalid Number", "Enter a valid 10-digit mobile number");
+                return;
+            }
+
+            generatedOtp = new Random().nextInt(9000) + 1000;
+
+            // Show OTP in AlertDialog (demo)
+            showAlert("Your OTP", "Your OTP is: " + generatedOtp + "\n(Demo OTP)");
+        });
+
+// Verify OTP button - only verifies the entered OTP
         btnVerifyOtp.setOnClickListener(v -> {
             String enteredOtp = etOtp.getText().toString().trim();
 
             if (enteredOtp.isEmpty()) {
-                Toast.makeText(this, "Please enter OTP", Toast.LENGTH_SHORT).show();
+                showAlert("Missing Input", "Please enter OTP");
                 return;
             }
 
             if (String.valueOf(generatedOtp).equals(enteredOtp)) {
                 isOtpVerified = true;
-                Toast.makeText(this, "OTP Verified ✅", Toast.LENGTH_SHORT).show();
+                showAlert("Success", "OTP Verified ✅");
             } else {
-                Toast.makeText(this, "Incorrect OTP ❌", Toast.LENGTH_SHORT).show();
+                showAlert("Error", "Incorrect OTP ❌");
             }
         });
+
+
+
+
+
+
+
+
 
         // 🔹 Sign Up
         btnSignup.setOnClickListener(v -> {
@@ -96,4 +139,13 @@ public class signup extends AppCompatActivity {
             finish();
         });
     }
+    private void showAlert(String title, String message) {
+        new AlertDialog.Builder(this)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                .setCancelable(false)
+                .show();;
+    }
+
 }

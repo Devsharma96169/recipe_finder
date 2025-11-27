@@ -100,6 +100,15 @@ public class favourite extends AppCompatActivity {
                 else if (recipe.contains("Paneer")) image.setImageResource(R.drawable.paneer);
                 else if (recipe.contains("Pulao")) image.setImageResource(R.drawable.pulao);
                 else if (recipe.contains("Dal")) image.setImageResource(R.drawable.makhani);
+                else if (recipe.contains("Curry")) image.setImageResource(R.drawable.cc);
+                else if (recipe.contains("Jeera Rice")) image.setImageResource(R.drawable.jeera);
+                else if (recipe.contains("Chicken")) image.setImageResource(R.drawable.chicken);
+                else if (recipe.contains("Biryani")) image.setImageResource(R.drawable.veg);
+
+
+
+
+
                 else image.setImageResource(R.drawable.ic_launcher_background);
 
                 // ✅ Click to open full recipe

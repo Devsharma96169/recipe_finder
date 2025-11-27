@@ -409,7 +409,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_launcher_background" />
+                        android:src="@drawable/rajma" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -464,7 +464,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_launcher_background" />
+                        android:src="@drawable/palak" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -519,7 +519,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_launcher_background" />
+                        android:src="@drawable/veg" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -574,7 +574,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_launcher_background" />
+                        android:src="@drawable/cc" />
 
                     <TextView
                         android:layout_width="wrap_content"

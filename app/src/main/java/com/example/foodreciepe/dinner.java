@@ -64,6 +64,12 @@ public class dinner extends AppCompatActivity {
         details4.setOnClickListener(v -> openRecipe("Butter Chicken"));
         details7.setOnClickListener(v -> openRecipe("Rajma Chawal"));
         details9.setOnClickListener(v -> openRecipe("Veg Pulao"));
+        details10.setOnClickListener(v -> openRecipe("Chicken Curry"));
+        details5.setOnClickListener(v -> openRecipe("Jeera Rice"));
+        details6.setOnClickListener(v -> openRecipe("Mix Veg Curry"));
+
+
+        // Set click listeners for favorite buttons
     }
 
     // This method must be outside onCreate()
