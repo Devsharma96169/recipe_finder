@@ -1,16 +1,18 @@
 package com.example.foodreciepe;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class dinner extends AppCompatActivity {
 
@@ -68,11 +70,40 @@ public class dinner extends AppCompatActivity {
         details5.setOnClickListener(v -> openRecipe("Jeera Rice"));
         details6.setOnClickListener(v -> openRecipe("Mix Veg Curry"));
 
-
-        // Set click listeners for favorite buttons
+        // Favourite Recipe list — these were outside onCreate(), fixed now
+        fav1.setOnClickListener(v -> addToFavorites("Paneer Butter Masala"));
+        fav2.setOnClickListener(v -> addToFavorites("Dal Tadka"));
+        fav7.setOnClickListener(v -> addToFavorites("Rajma Chawal"));
+        fav3.setOnClickListener(v -> addToFavorites("Veg Biryani"));
+        fav4.setOnClickListener(v -> addToFavorites("Butter Chicken"));
+        fav8.setOnClickListener(v -> addToFavorites("Palak Paneer"));
+        fav6.setOnClickListener(v -> addToFavorites("Mix Veg Curry"));
+        fav5.setOnClickListener(v -> addToFavorites("Jeera Rice"));
+        fav10.setOnClickListener(v -> addToFavorites("Chicken Curry"));
+        fav9.setOnClickListener(v -> addToFavorites("Veg Pulao"));
     }
 
-    // This method must be outside onCreate()
+    private void addToFavorites(String recipeName) {
+        SharedPreferences prefsUser = getSharedPreferences("UserData", MODE_PRIVATE);
+        boolean isLoggedIn = prefsUser.getBoolean("isLoggedIn", false);
+
+        if (!isLoggedIn) {
+            Toast.makeText(this, "Please login to add favorites ❤️", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(dinner.this, Login.class));
+            return;
+        }
+
+        SharedPreferences prefs = getSharedPreferences("Favourites", MODE_PRIVATE);
+        Set<String> favs = prefs.getStringSet("favList", new HashSet<>());
+
+        Set<String> updatedFavs = new HashSet<>(favs);
+        updatedFavs.add(recipeName);
+
+        prefs.edit().putStringSet("favList", updatedFavs).apply();
+
+        Toast.makeText(this, recipeName + " added to Favourites ❤️", Toast.LENGTH_SHORT).show();
+    }
+
     private void openRecipe(String recipeName) {
         Intent intent = new Intent(dinner.this, recipe.class);
         intent.putExtra("recipeName", recipeName);
